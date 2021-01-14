@@ -1,16 +1,12 @@
 import React from "react";
-import { NativeModules, StyleSheet, View } from "react-native";
-import CarItem from "./components/CarItem";
+import { StyleSheet, View } from "react-native";
+// import CarItem from "./components/CarItem";
+import CarList from "./components/CarList";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <CarItem
-        name={"Model S"}
-        tagline={"Order online for"}
-        taglineCTA={"Touchless Delivery"}
-        image={require("./assets/images/ModelS.jpeg")}
-      />
+      <CarList />
     </View>
   );
 }
