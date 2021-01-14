@@ -9,7 +9,7 @@ function StyledButton({ type, content, onPress }) {
     <View style={styles.container}>
       <Pressable
         style={[styles.button, { backgroundColor: backgroundColor }]}
-        onPress={() => onPress() }
+        onPress={() => onPress()}
       >
         <Text style={[styles.text, { color: textColor }]}>{content}</Text>
       </Pressable>

@@ -1,11 +1,16 @@
 import React from "react";
-import {StyleSheet, View } from "react-native";
+import { NativeModules, StyleSheet, View } from "react-native";
 import CarItem from "./components/CarItem";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <CarItem />
+      <CarItem
+        name={"Model S"}
+        tagline={"Order online for"}
+        taglineCTA={"Touchless Delivery"}
+        image={require("./assets/images/ModelS.jpeg")}
+      />
     </View>
   );
 }
@@ -17,5 +22,4 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  
 });
